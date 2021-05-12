@@ -15,12 +15,15 @@
     --font-action: "Muli", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 .hamburguer{
   /*background-color: red;*/
   width: 2rem;
   height: 2rem;
   position:fixed;
-  z-index: 100;
+  z-index: 200;
   right: 2rem;
   top: 2rem;
   display: flex;
@@ -169,6 +172,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -443,8 +447,8 @@ width: 100%;
      width: 20rem;
      font-size: 1.5rem;
      font-family: var(--font-secundary);
-     border-bottom: 2px dashed #636363;
-     height: 3rem;
+     border-bottom: 1px dashed #636363;
+     height: 2rem;
      outline: none;
      margin: 2rem 0;
  }
@@ -483,7 +487,7 @@ width: 100%;
 }
 
 .btn-submit{
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
     width: 100%;
 }
@@ -554,3 +558,50 @@ width: 100%;
       cursor: pointer;
       grid-column: 2;
   }
+
+  footer{
+      width: 100%;
+      height: 7rem;
+      background-color: #17181b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.footer-content{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #7F00FF;  
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  
+    background: linear-gradient(to right, #E100FF, #7F00FF); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.1rem 0.6rem #000009;
+}
